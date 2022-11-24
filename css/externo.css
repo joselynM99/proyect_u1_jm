@@ -1,0 +1,14 @@
+h1,h6 {
+    color: blue;
+    background-color: green;
+}
+
+#id_titulo{
+    color:yellow;
+    background-color: brown;
+}
+
+.clase_titulos{
+    color:coral;
+    background-color: black;
+}
