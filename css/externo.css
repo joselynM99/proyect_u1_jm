@@ -1,14 +1,43 @@
-h1,h6 {
+/*Universal*/
+/**{
+    background-color: black;
+}*/
+
+/*Elemento*/
+h1,
+h6 {
     color: blue;
     background-color: green;
 }
 
-#id_titulo{
-    color:yellow;
+/*
+p{
+    color: white
+}*/
+
+/*identificador*/
+#id_titulo {
+    color: yellow;
     background-color: brown;
 }
 
-.clase_titulos{
-    color:coral;
+/*clase*/
+.clase_titulos {
+    color: coral;
     background-color: black;
+}
+
+/*atributo*/
+img[src*="jpg"] {
+    width: 50px;
+    height: 50px;
+}
+
+/*pseudo-clase o evento*/
+label:hover {
+    color: #FC427B;
+}
+
+label:active {
+    color: #82589F;
 }
