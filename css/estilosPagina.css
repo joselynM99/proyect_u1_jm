@@ -21,14 +21,66 @@ body {
     text-align: center;
     background-color: lightpink;
 }
-.cabecera{
+
+.cabecera {
     background: white;
     border: 1px solid purple;
     padding: 20px;
 }
 
 /*combinación de estilos. Anidación de estilos para hijos*/
-.cabecera h1{
+.cabecera h1 {
     text-align: left;
 }
 
+.menu li {
+    list-style: none;
+    display: inline-block;
+    border: 1px solid black;
+    padding: 7px;
+    margin: 5px;
+}
+
+.menu {
+    background: blanchedalmond;
+    border: 1px solid black;
+    text-align: left;
+}
+
+.formulario {
+    width: 900px;
+    border: double black;
+    margin: 15px auto;
+    background: thistle;
+    /*auto opcion a text-aling, siempre va a centrar, automático*/
+}
+
+.seccion {
+    margin: 20px;
+    width: 600px;
+    float: left;
+}
+
+.referencias {
+    width: 200px;
+    border: 1px solid black;
+    margin: 20px;
+    float: left;
+    /*alinear conjunto de elementos. 
+    Ponerse subsiguiente a los elementos dentro del componente principal*/
+}
+
+article {
+    border: 1px solid black;
+    padding: 20px;
+    margin-bottom: 25px;
+    background: rgba(228, 162, 236, 0.842);
+}
+
+article footer {
+    text-align: right;
+}
+
+.pie {
+    clear: both;
+}
