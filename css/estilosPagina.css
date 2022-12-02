@@ -58,13 +58,14 @@ body {
 .seccion {
     margin: 20px;
     width: 600px;
-    float: left;
+    float: left; /*estilo de elemento flotante*/
 }
 
 .referencias {
-    width: 200px;
+    width: 250px;
     border: 1px solid black;
-    margin: 20px;
+    /*margin-top: 200px;*/
+    margin: 100px 1px;
     float: left;
     /*alinear conjunto de elementos. 
     Ponerse subsiguiente a los elementos dentro del componente principal*/
@@ -75,6 +76,13 @@ article {
     padding: 20px;
     margin-bottom: 25px;
     background: rgba(228, 162, 236, 0.842);
+}
+
+blockquote {
+    border: 1px solid black;
+    width: 200px;
+    margin: 10px auto 40px auto;
+    /*centrado automático*/
 }
 
 article footer {
