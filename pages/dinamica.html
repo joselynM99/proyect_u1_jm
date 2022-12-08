@@ -6,6 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=>, initial-scale=1.0">
     <title>Document</title>
+
+    <script>
+
+        function cambiarColor() {
+            document.getElementById('ele1').style.backgroundColor = 'blue'
+        }
+
+        function cambiarColor2(color) {
+            document.getElementById('ele1').style.backgroundColor = color
+        }
+       
+    </script>
+    <script src="../js/funciones.js"></script>
 </head>
 
 <body>
@@ -13,12 +26,29 @@
     <nav></nav>
     <section>
         <label id="ele1" for="">Texto 1</label>
-        <label id="ele2">Texto 1</label>
+        <label id="ele2" for="">Texto 2</label>
+        <img id="img1" src="../images/esec.jpg" alt="No existe imagen" />
         <!--dentro de comillas dobles debe ir comillas simples-->
         <button onclick="document.getElementById('ele1').innerHTML='Modificaste el texto'">Cambiar texto</button>
         <button onclick="document.getElementById('ele1').style.backgroundColor='blue'">Cambiar color</button>
+        <button onclick="cambiarColor()">Cambiar color 2</button>
+        <button onclick="cambiarColor2('yellow')">Cambiar color 3</button>
+        <button onclick="document.getElementById('img1').src='../images/ec.png'">Cambiar imagen</button>
+        <input id="pass1" type="password">
+        <button onclick="alert(document.getElementById('pass1').value)">Mostrar</button>
+        <button onclick="alert(sumar(3,5))">Sumar</button>
 
+        <input id="num1" type="text">
+        <input id="num2" type="text">
+
+        
+        <button onclick="alert(restar(num1.value,num2.value))">Restar</button>
+        <button onclick="alert(dividir(10,2))">Dividir</button>
+        <button onclick="document.getElementById('resu').innerHTML=dividir(10,2)">Dividir 2</button>
+        <label id="resu" for="">Resultado:</label>
     </section>
+
+   
     <footer></footer>
 </body>
 
