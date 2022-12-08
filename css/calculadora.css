@@ -1,0 +1,17 @@
+body{
+    text-align: center;
+}
+
+.calculadora{
+    margin: 15px auto;
+}
+
+.teclas{
+    width: 70px;
+    height: 70px;
+}
+
+#resultado{
+    width: 400px;
+    height: 50px;
+}

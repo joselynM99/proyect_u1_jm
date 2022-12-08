@@ -7,32 +7,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+    <link rel="stylesheet" href="../css/calculadora.css">
     <script src="../js/funciones.js"></script>
 </head>
 
 <body>
-    <header></header>
+    <header>
+        <h1>CALCULADORA</h1>
+    </header>
     <nav></nav>
     <section>
-        <label id="cal" for="">Calculadora:</label>
-        <input id="numero1" type="number">
-        <input id="numero2" type="number">
+        <input id="resultado" type="text"></input></td>
+        <table class="calculadora">
 
+            <tr>
+                <td><button class="teclas" onclick="presionar('1')">1</button></td>
+                <td><button class="teclas" onclick="presionar('2')">2</button></td>
+                <td><button class="teclas" onclick="presionar('3')">3</button></td>
+                <td><button class="teclas" onclick="presionar('+')">+</button></td>
+            </tr>
+            <tr>
+                <td><button class="teclas" onclick="presionar('4')">4</button></td>
+                <td><button class="teclas" onclick="presionar('5')">5</button></td>
+                <td><button class="teclas" onclick="presionar('6')">6</button></td>
+                <td><button class="teclas" onclick="presionar('-')">-</button></td>
+            </tr>
+            <tr>
+                <td><button class="teclas" onclick="presionar('7')">7</button></td>
+                <td><button class="teclas" onclick="presionar('8')">8</button></td>
+                <td><button class="teclas" onclick="presionar('9')">9</button></td>
+                <td><button class="teclas" onclick="presionar('*')">x</button></td>
+            </tr>
+            <tr>
+                <td><button class="teclas" onclick="presionar('0')">0</button></td>
+                <td><button class="teclas" onclick="presionar('/')">/</button></td>
+                <td><button class="teclas" onclick="presionar('.')">.</button></td>
+                <td><button class="teclas" onclick="calcular()">=</button></td>
+            </tr>
+            <tr>
+                <td><button class="teclas" onclick="reset()" class="c">C</button></td>
 
-        <button
-            onclick="document.getElementById('resul').innerHTML=sumar(parseFloat(document.getElementById('numero1').value),
-                                                                    parseFloat(document.getElementById('numero2').value))">Sumar</button>
-        <button
-            onclick="document.getElementById('resul').innerHTML=restar(document.getElementById('numero1').value,
-                                                                        document.getElementById('numero2').value)">Restar</button>
-        <button
-            onclick="document.getElementById('resul').innerHTML=multiplicar(document.getElementById('numero1').value,
-                                                                            document.getElementById('numero2').value)">Multiplicar</button>
-        <button
-            onclick="document.getElementById('resul').innerHTML=dividir(document.getElementById('numero1').value,
-                                                                        document.getElementById('numero2').value)">Dividir</button>
-        <label for="">Resultado:</label>
-        <label id="resul" for="">0</label>
+            </tr>
+        </table>
 
     </section>
 
